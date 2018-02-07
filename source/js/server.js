@@ -21,7 +21,7 @@ import 'index.css';
 
 const app = express();
 const hostname = 'localhost';
-const port = 4002;
+const port = 8080;
 
 // ENV
 const IS_DEVELOPMENT = app.get('env') === 'development';
@@ -30,7 +30,7 @@ const IS_DEVELOPMENT = app.get('env') === 'development';
 app.disable('x-powered-by');
 
 // Telling server to serve our client app build as static assets
-app.use('/marvin/client', express.static('build/marvin/client'));
+app.use('/client', express.static('build/client'));
 
 function sendResponse(req, res, store) {
   // Dehydrates the state
@@ -91,8 +91,7 @@ function handleRequest(req, res, sagas = null, sagaArgs = {}) {
 // pass two additional params to "handleRequest"
 // array of sagas which should be completed
 // and object containing saga's options (usually req.params)
-app.get('/marvin/people', (req, res) => {
-  console.log('/people');
+app.get('/people', (req, res) => {
   handleRequest(req, res, [getPeopleServer]);
 });
 

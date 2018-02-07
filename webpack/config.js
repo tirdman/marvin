@@ -114,7 +114,7 @@ const rules = [
       {
         loader: 'file-loader',
         options: {
-          name: 'marvin/client/assets/[name]-[hash].[ext]',
+          name: 'client/assets/[name]-[hash].[ext]',
         },
       },
     ],

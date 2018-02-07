@@ -1,7 +1,7 @@
 const outputFiles = {
-  client: 'marvin/client/client.js',
-  vendor: 'marvin/client/vendor.js',
-  css: 'marvin/client/style.css',
+  client: 'client/client.js',
+  vendor: 'client/vendor.js',
+  css: 'client/style.css',
 };
 
 module.exports = {

@@ -1,4 +1,4 @@
-export const publicPath = '/marvin/';
+export const publicPath = '/';
 
 export const routeCodes = {
   HOME: publicPath,

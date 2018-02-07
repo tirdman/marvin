@@ -34,7 +34,7 @@ export default class Menu extends Component {
           <NavLink
             activeClassName='Menu-link--active'
             className='Menu-link'
-            to='/marvin/404'
+            to='/404'
           >
             404
           </NavLink>
