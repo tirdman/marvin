@@ -3,6 +3,8 @@ import ReactDOMServer from 'react-dom/server';
 import PropTypes from 'prop-types';
 import { outputFiles } from '../../../../webpack/output-files';
 
+console.log(outputFiles);
+
 const ServerHTML = ({ appHtml, dehydratedState }) => (
   <html lang='en'>
     <head>

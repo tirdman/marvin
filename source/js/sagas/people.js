@@ -12,8 +12,11 @@ import api from 'api';
 function createGetPeople(isServer = false) {
   return function* (options) { // eslint-disable-line consistent-return
     try {
+
+      console.log("createGetPeople Saga");
       const data = yield call(() => api.getPeople(options.id));
       const action = { type: GET_PEOPLE_SUCCESS, data };
+
 
       if (isServer) {
         return action;

@@ -69,7 +69,7 @@ module.exports = {
   entry,
   output: {
     path: paths.build,
-    publicPath: '/',
+    publicPath: '/marvin/',
     filename: outputFiles.client,
   },
   module: {
