@@ -2,6 +2,7 @@
 node_modules
 build
 .module-cache
+.idea
 *.log*
 _nogit
 todo.md
